@@ -1,7 +1,6 @@
 "use strict";
 
-const windowSize = window.innerWidth;
-console.log(windowSize);
+// const windowSize = window.innerWidth;
 
 const main = document.getElementById("main");
 const successModal = document.getElementById("success-modal");
@@ -9,10 +8,10 @@ const form = document.getElementById("subscribe-form");
 const email = document.getElementById("email-input");
 const dismissBtn = document.getElementById("dismiss-btn");
 
-if (windowSize <= 768) {
-  document.getElementById("illustration-sign-up").src =
-    "./assets/images/illustration-sign-up-mobile.svg";
-}
+// if (windowSize <= 768) {
+//   document.getElementById("illustration-sign-up").src =
+//     "./assets/images/illustration-sign-up-mobile.svg";
+// }
 
 function init() {
   // Resets form to original state

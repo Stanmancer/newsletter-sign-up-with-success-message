@@ -17,7 +17,12 @@
 <body>
   <main id="main" class="container">
     <!-- Sign-up form start -->
-    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up" id="illustration-sign-up">
+
+    <picture>
+      <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up illustration" id="illustration-sign-up">
+    </picture>
+
 
     <section class="main-text">
       <h1>Stay updated!</h1>
@@ -64,10 +69,10 @@
   </section>
   <!-- Success message end -->
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/stanmancer">Stanmancer</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
