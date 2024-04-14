@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: var(--charcoal-grey);
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 30px;
+    gap: 10px;
+    box-shadow: 0px 0px 50px #00000060;
+}
+
+main {
+    width: 90vw;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-text {
+    width: 45%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--dark-slate-grey);
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+p,
+.main-text ul {
+    color: var(--charcoal-grey);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.main-text ul {
+    margin-bottom: 30px;
+}
+
+.main-text li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.main-text li::before {
+    content: url("./assets/images/icon-list.svg");
+    width: 21px;
+    height: 21px;
+    margin-right: 1rem;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--charcoal-grey);
+}
+
+#subscribe-form label {
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+}
+
+#subscribe-form small {
+    position: absolute;
+    right: 0;
+    color: var(--tomato);
+    display: none;
+}
+
+#subscribe-form input {
+    padding: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#subscribe-form input::placeholder {
+    color: var(--grey);
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+}
+
+#subscribe-form input:focus {
+    border: 1px solid var(--charcoal-grey);
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: var(--tomato);
+    box-shadow: 0px 8px 20px #ff6347a3;
+}
+
+#subscribe-form.failed input {
+    border: 1px solid var(--tomato);
+    color: var(--tomato);
+    background-color: #ff634723;
+}
+
+#subscribe-form.failed small {
+    display: inline;
+}
+
+/* ============ success message start ============ */
+
+.success-modal {
+    max-width: 500px;
+    padding: 60px;
+    justify-content: center;
+}
+
+.success-modal img {
+    padding-bottom: 20px;
+}
+
+.success-modal .btn {
+    width: 100%;
+}
+
+/* ============ success message end ============ */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    color: var(--white);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--tomato);
+}
+
+
+@media screen and (max-width: 768px) {
+    #main {
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: unset;
+        padding: 0 0 20px;
+    }
+
+    #illustration-sign-up,
+    .main-text {
+        width: 80%;
+    }
+
+    .attribution {
+        color: var(--charcoal-grey);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main {
+        width: 100vw;
+        flex-direction: column;
+        border-radius: 0px;
+        padding: 0;
+    }
+
+    #illustration-sign-up,
+    .main-text {
+        width: 100%;
+    }
+
+    #illustration-sign-up {
+        width: 100vw;
+    }
+
+    .main-text {
+        padding: 30px;
+    }
+
+    .success-modal h1,
+    .main-text h1 {
+        font-size: 48px;
+    }
+
+    .success-modal {
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 30px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .success-modal img {
+        align-self: self-start;
+    }
+
+    .success-modal .btn {
+        width: calc(100% - 60px);
+        position: absolute;
+        bottom: 20px;
+    }
+
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <main id="main" class="container">
+    <!-- Sign-up form start -->
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up" id="illustration-sign-up">
+
+    <section class="main-text">
+      <h1>Stay updated!</h1>
+      <p>
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <ul>
+        <li>
+          Product discovery and building what matters
+        </li>
+        <li>
+          Measuring to ensure updates are a success
+        </li>
+        <li>
+          And much more!
+        </li>
+      </ul>
+
+      <form action="/" id="subscribe-form" class="">
+        <label for="email">Email address <small class="error-message">Valid email required</small></label>
+
+        <input type="email" name="email" id="email-input" placeholder="email@company.com">
+
+
+        <button type="submit" id="submit-btn" class="btn">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+    <!-- Sign-up form end -->
+  </main>
+
+  <!-- Success message start -->
+  <section id="success-modal" class="container success-modal hidden">
+    <img src="./assets/images/icon-success.svg" alt="icon-success">
+
+    <h1>Thanks for subscribing!</h1>
+
+    <p>
+      A confirmation email has been sent to <strong id="replace-email">ash@loremcompany.com</strong>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+
+    <button type="submit" id="dismiss-btn" class="btn">Dismiss message</button>
+  </section>
+  <!-- Success message end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/stanmancer">Stanmancer</a>.
+  </div>
+</body>
+
+</html>
