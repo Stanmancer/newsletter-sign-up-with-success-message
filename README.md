@@ -6,6 +6,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Layout](#layout)
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
@@ -40,8 +41,8 @@ The designs were created to the following widths:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://stanmancer.github.io/newsletter-sign-up-with-success-message/)
+- Solution URL: [Frontend Mentor solution URL](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-vanillajs-pVI3Fbd0_l)
+- Live Site URL: [Github Pages live site](https://stanmancer.github.io/newsletter-sign-up-with-success-message/)
 
 
 ### Built with
